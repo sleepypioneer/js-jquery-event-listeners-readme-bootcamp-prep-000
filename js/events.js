@@ -11,10 +11,9 @@ function frameIt() {
 }
 
 function pressIt() {
-  $('#typing').on('keydown', function(e){
-    const key = parseInt(e.detail || e.which);
-    if (key ==== 71) {
-      alert("Your using the G key!")
+  $('#typing').on('keydown', function(key){
+    if (key.which === 71) {
+      alert("You pressed the G key!")
     }
   })
 }
